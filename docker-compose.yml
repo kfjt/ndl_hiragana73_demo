@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jupyter:
+    build: .
+    volumes:
+      - C:\data:/data
+    ports:
+      - "8888:8888"
+    environment:
+      - DISPLAY=10.0.75.1:0.0
